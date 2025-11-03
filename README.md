@@ -32,9 +32,7 @@ Projekt byl vytvořen na základě tohoto tutoriálu:
 
 Toto je krok-za-krokem návod, jak nastavit a spustit tento Laravel projekt s MySQL databází.
 
-### 1️⃣ Klonování repozitáře
 ```bash
-
 1️⃣ Klonování repozitáře
 git clone https://github.com/yourusername/yourproject.git
 cd yourproject
