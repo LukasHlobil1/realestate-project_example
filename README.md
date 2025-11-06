@@ -34,7 +34,7 @@ Toto je krok-za-krokem návod, jak nastavit a spustit tento Laravel projekt s My
 
 ```bash
 1️⃣ Klonování repozitáře
-git clone https://github.com/yourusername/yourproject.git
+git clone https://github.com/LukasHlobil1/realestate-project_example.git
 cd yourproject
 
 2️⃣ Instalace závislostí
