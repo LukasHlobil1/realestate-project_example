@@ -144,11 +144,11 @@
             <div class="flex items-center space-x-4">
                 {{-- Added dark text color to title --}}
                 <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100">
-                    {{ $properties->total() }} Properties Found
+                    {{ $properties->total() }} Nalezených nemovitostí
                 </h2>
                 @if($search || $type || $listingType || $city || $minPrice || $maxPrice || $minBedrooms || $featuredOnly)
                     {{-- Added dark text color to filtered text --}}
-                    <span class="text-sm text-gray-500 dark:text-gray-400">with filters applied</span>
+                    <span class="text-sm text-gray-500 dark:text-gray-400">S aplikovanými filtry</span>
                 @endif
             </div>
 
@@ -230,7 +230,7 @@
                                             <span>🚿 {{ $property->bathrooms }}</span>
                                         @endif
                                         @if($property->total_area)
-                                            <span>📐 {{ number_format($property->total_area) }} sqft</span>
+                                            <span>📐 {{ number_format($property->total_area) }} Metrů čtverečních</span>
                                         @endif
                                     </div>
                                 @endif
@@ -280,13 +280,13 @@
                                         {{-- Added dark text color to property stats --}}
                                         <div class="flex items-center space-x-4 text-sm text-gray-600 dark:text-gray-400 mb-3">
                                             @if($property->bedrooms)
-                                                <span>🛏️ {{ $property->bedrooms }} bedrooms</span>
+                                                <span>🛏️ {{ $property->bedrooms }} Místností </span>
                                             @endif
                                             @if($property->bathrooms)
-                                                <span>🚿 {{ $property->bathrooms }} bathrooms</span>
+                                                <span>🚿 {{ $property->bathrooms }} Koupelen </span>
                                             @endif
                                             @if($property->total_area)
-                                                <span>📐 {{ number_format($property->total_area) }} sqft</span>
+                                                <span>📐 {{ number_format($property->total_area) }} Metry čtvereční</span>
                                             @endif
                                         </div>
                                     @endif
@@ -296,7 +296,7 @@
                                             <span class="text-2xl font-bold text-green-600">{{ $property->formatted_price }}</span>
                                             @if($property->price_per_sqft)
                                                 {{-- Added dark text color to price per sqft --}}
-                                                <span class="text-sm text-gray-500 dark:text-gray-400 ml-2">Kč {{ number_format($property->price_per_sqft, 0) }}/sqft</span>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400 ml-2">Kč {{ number_format($property->price_per_sqft, 0) }}/Metrů čtverečních</span>
                                             @endif
                                         </div>
 
